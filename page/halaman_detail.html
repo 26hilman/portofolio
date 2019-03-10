@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Shop Item - Start Bootstrap Template</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/main.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="halaman_awal.html">Jual Mobil Bekas</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <form class="form-inline">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            </form>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="halaman_awal.html">Home
+                            <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#ModalLogin">
+                            Login
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#ModalRegister">
+                            Register
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="bg-primary py-5 mb-5">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-lg-12">
+                    <h1 class="display-4 text-white mt-5 mb-2">Jual Mobil Bekas</h1>
+                    <p class="lead mb-5 text-white-50">Jual Mobil Bekas menjadi pilihan yang tepat bagi Anda yang ingin
+                        berbelanja dengan lebih mudah dan nyaman.</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Modal HTML Markup -->
+    <div id="ModalLogin" class="modal fade">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title">Login</h1>
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                </div>
+                <div class="modal-body">
+                    <form role="form" method="POST" action="">
+                        <input type="hidden" name="_token" value="">
+                        <div class="form-group">
+                            <label class="control-label">E-Mail Address</label>
+                            <div>
+                                <input type="email" class="form-control input-lg" name="email" value="">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">Password</label>
+                            <div>
+                                <input type="password" class="form-control input-lg" name="password">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" name="remember"> Remember Me
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div>
+                                <button type="submit" class="btn btn-success">Login</button>
+
+                                <a class="btn btn-link" href="">Forgot Your Password?</a>
+                            </div>
+                        </div>
+                    </form>
+                </div> <!-- /.modal-body -->
+            </div> <!-- /.modal-content -->
+        </div> <!-- /.modal-dialog -->
+    </div> <!-- /.modal -->
+
+    <div id="ModalRegister" class="modal fade">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1>Register</h1>
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                </div>
+                <div class="modal-body">
+                    <form role="form" method="POST" action="">
+                        <input type="hidden" name="_token" value="">
+                        <div class="form-group">
+                            <label class="control-label">Username</label>
+                            <div>
+                                <input type="text" class="form-control input-lg" name="name" value="">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">E-Mail Address</label>
+                            <div>
+                                <input type="email" class="form-control input-lg" name="email" value="">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">Password</label>
+                            <div>
+                                <input type="password" class="form-control input-lg" name="password">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">Confirm Password</label>
+                            <div>
+                                <input type="password" class="form-control input-lg" name="password_confirmation">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div>
+                                <button type="submit" class="btn btn-success">
+                                    Register
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div> <!-- /.modal-body -->
+            </div> <!-- /.modal-content -->
+        </div> <!-- /.modal-dialog -->
+    </div> <!-- /.modal -->
+    <!-- Modal HTML Markup -->
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-lg-3">
+                <div class="profile-content">
+                    <img src="./assets/img/profile-picture.jpeg" id="portrait">
+                </div>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead class="thead-light">
+                            <tr>
+                                <th>Name</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Siapa Ya</td>
+                            </tr>
+                            <thead class="thead-light">
+                                <tr>
+                                    <th>Email</th>
+                                </tr>
+                            </thead>
+                        <tbody>
+                            <tr>
+                                <td>siapaya@alphatech.id</td>
+                            </tr>
+                            <thead class="thead-light">
+                                <tr>
+                                    <th>Phone Number</th>
+                                </tr>
+                            </thead>
+                        <tbody>
+                            <tr>
+                                <td>082132130912</td>
+                            </tr>
+                    </table>
+                </div>
+            </div>
+            <!-- /.col-lg-3 -->
+
+            <div class="col-lg-9">
+
+                <div class="card mt-4">
+                    <div id="demo" class="carousel slide" data-ride="carousel">
+
+                        <!-- Indicators -->
+                        <ul class="carousel-indicators">
+                            <li data-target="#demo" data-slide-to="0" class="active"></li>
+                            <li data-target="#demo" data-slide-to="1"></li>
+                            <li data-target="#demo" data-slide-to="2"></li>
+                        </ul>
+
+                        <!-- The slideshow -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="card-img-top img-fluid" src="./assets/img/mobil.jpg" alt=""> </div>
+                            <div class="carousel-item">
+                                <img class="card-img-top img-fluid" src="./assets/img/motor.jpg" alt=""> </div>
+                            <div class="carousel-item">
+                                <img class="card-img-top img-fluid" src="./assets/img/monitor.jpg" alt=""> </div>
+                        </div>
+
+                        <!-- Left and right controls -->
+                        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#demo" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Suzuki Ignis 2018</h3>
+                        <h4>Rp. 200.000.000,-</h4>
+                        <div class="table-responsive">
+                            <table class="table table-bordered">
+                                <tr>
+                                    <td class="tab-title">Model Mobil</td>
+                                    <td>City Car</td>
+                                </tr>
+                                <tr class="tab-even">
+                                    <td class="tab-title">Transmisi</td>
+                                    <td>Manual</td>
+                                </tr>
+                                <tr>
+                                    <td class="tab-title">Jarak Tempuh</td>
+                                    <td>158.000 km</td>
+                                </tr>
+                                <tr>
+                                    <td class="tab-title">Tahun</td>
+                                    <td>2018</td>
+                                </tr>
+                                <tr>
+                                    <td class="tab-title">Bahan Bakar</td>
+                                    <td>Bensin</td>
+                                </tr>
+                                <tr>
+                                    <td class="tab-title">Warna</td>
+                                    <td>Merah</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente dicta
+                            fugit fugiat hic aliquam itaque facere, soluta. Totam id dolores, sint aperiam sequi
+                            pariatur praesentium animi perspiciatis molestias iure, ducimus!</p>
+                    </div>
+                </div>
+                <!-- /.card -->
+
+            </div>
+            <!-- /.col-lg-9 -->
+
+        </div>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+        <div class="container">
+            <p class="m-0 text-center text-white">Copyright &copy; Jual Mobil Bekas 2019</p>
+        </div>
+        <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
