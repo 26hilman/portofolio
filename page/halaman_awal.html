@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Jual Mobil Bekas</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/main.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="halaman_awal.html">Jual Mobil Bekas</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <form class="form-inline">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            </form>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="halaman_awal.html">Home
+                            <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#ModalLogin">
+                            Login
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#ModalRegister">
+                            Register
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="bg-primary py-5 mb-5">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-lg-12">
+                    <h1 class="display-4 text-white mt-5 mb-2">Jual Mobil Bekas</h1>
+                    <p class="lead mb-5 text-white-50">Jual Mobil Bekas menjadi pilihan yang tepat bagi Anda yang ingin berbelanja dengan lebih mudah dan nyaman.</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Modal HTML Markup -->
+    <div id="ModalLogin" class="modal fade">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title">Login</h1>
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                </div>
+                <div class="modal-body">
+                    <form role="form" method="POST" action="">
+                        <input type="hidden" name="_token" value="">
+                        <div class="form-group">
+                            <label class="control-label">E-Mail Address</label>
+                            <div>
+                                <input type="email" class="form-control input-lg" name="email" value="">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">Password</label>
+                            <div>
+                                <input type="password" class="form-control input-lg" name="password">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" name="remember"> Remember Me
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div>
+                                <button type="submit" class="btn btn-success">Login</button>
+
+                                <a class="btn btn-link" href="">Forgot Your Password?</a>
+                            </div>
+                        </div>
+                    </form>
+                </div> <!-- /.modal-body -->
+            </div> <!-- /.modal-content -->
+        </div> <!-- /.modal-dialog -->
+    </div> <!-- /.modal -->
+
+    <div id="ModalRegister" class="modal fade">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1>Register</h1>
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                </div>
+                <div class="modal-body">
+                    <form role="form" method="POST" action="">
+                        <input type="hidden" name="_token" value="">
+                        <div class="form-group">
+                            <label class="control-label">Username</label>
+                            <div>
+                                <input type="text" class="form-control input-lg" name="name" value="">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">E-Mail Address</label>
+                            <div>
+                                <input type="email" class="form-control input-lg" name="email" value="">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">Password</label>
+                            <div>
+                                <input type="password" class="form-control input-lg" name="password">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">Confirm Password</label>
+                            <div>
+                                <input type="password" class="form-control input-lg" name="password_confirmation">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div>
+                                <button type="submit" class="btn btn-success">
+                                    Register
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div> <!-- /.modal-body -->
+            </div> <!-- /.modal-content -->
+        </div> <!-- /.modal-dialog -->
+    </div> <!-- /.modal -->
+    <!-- Modal HTML Markup -->
+
+    <!-- Page Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 mb-5">
+                <h2>What We Do</h2>
+                <hr>
+                <p>Di Jual Mobil Bekas Anda akan menemukan jutaan mobil bekas namun berkualitas yang pas dan harga murah. Anda bisa berkomunikasi langsung dengan para penjual untuk bernegosiasi tentang harga, pembayaran, maupun mengecek langsung kondisi dan keadaan mobil yang akan Anda beli. Memiliki jutaan penjual yang tersebar di seluruh wilayah Indonesia membuat Jual Mobil Bekas menjadi pilihan yang tepat bagi Anda yang ingin berbelanja dengan lebih mudah dan nyaman.</p>
+                <!-- <a class="btn btn-primary btn-lg" href="#">Call to Action &raquo;</a> -->
+            </div>
+            <div class="col-md-4 mb-5">
+                <h2>Contact Us</h2>
+                <hr>
+                <address>
+                    <strong>Jual Mobil Bekas</strong>
+                    <br>Malang, Jawa Timur
+                    <br>Indonesia
+                    <br>
+                </address>
+                <address>
+                    <abbr title="Phone">P:</abbr>
+                    (0341)-456789
+                    <br>
+                    <abbr title="Email">E:</abbr>
+                    <a href="mailto:#">mobkas@alphatech.id</a>
+                </address>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <div class="row">
+            <div class="col-md-4 mb-5">
+                <div class="card h-100">
+                    <img class="card-img-top" src="./assets/img/mobil.jpg" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">Suzuki Ignis 2018</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse
+                            necessitatibus neque sequi doloribus.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="halaman_detail.html" class="btn btn-primary">Lihat Detail</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-5">
+                <div class="card h-100">
+                    <img class="card-img-top" src="./assets/img/mobil.jpg" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">Suzuki Ignis 2018</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse
+                            necessitatibus neque sequi doloribus totam ut praesentium aut.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="halaman_detail.html" class="btn btn-primary">Lihat Detail</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-5">
+                <div class="card h-100">
+                    <img class="card-img-top" src="./assets/img/mobil.jpg" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">Suzuki Ignis 2018</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse
+                            necessitatibus neque.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="halaman_detail.html" class="btn btn-primary">Lihat Detail</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+        <div class="container">
+            <p class="m-0 text-center text-white">Copyright &copy; Jual Mobil Bekas 2019</p>
+        </div>
+        <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <!-- <script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/jquery.min.js"></script> -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
